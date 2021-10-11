@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f2ddd0;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #f2ddd0;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.centertext{
+text-align:center;
+}
+.centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+.topleftimage {
+  float: left;
+  width: 30%;
+}
+
+.toprighttext {
+  float: left;
+  width: 70%;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#bad4f5;padding:15px;">
+<img class="centerimage" src="munir.jpg" style="width:10%">
+  <h1 style="text-align:center"> Md Shirajum Munir</h1>
+  <h3 class="centertext">Postdoctoral Researcher</h3>
+  <p class="centertext">Networking Intelligence Lab, Department of Computer Science and Engineering,</p>
+  <p class="centertext"> Kyung Hee University, Seoul, Republic of Korea</p>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="https://munir-bd.github.io/">Selected Talk</a></div>
+    <div class="menuitem"><a href="https://munir-bd.github.io/">Project</a></div>
+  </div>
+
+  <div class="main">
+    <h2>Full Publications</h2>
+	<h3>Journal Papers</h3>
+	<ol>
+		<li>M. S. Munir, N. H. Tran, W. Saad, and C. S. Hong, ”Multi-Agent Meta-Reinforcement Learning for Self-Powered and Sustainable Edge Computing Systems,” <em>IEEE Transactions on Network and Service Management (<b>IEEE TNSM</b>) </em>, vol. 18, no. 3, pp. 3353-3374, Sept. 2021 (<a href="https://ieeexplore.ieee.org/document/9351561">Link</a>).</li>
+		<li>M. S. Munir, S. F. Abedin, N. H. Tran, Z. Han, E. -N. Huh, and C. S. Hong, ”Risk-Aware Energy Scheduling for Edge Computing with Microgrid: A Multi-Agent Deep Reinforcement Learning Approach,” <em>IEEE Transactions on Network and Service Management (<b>IEEE TNSM</b>) </em>, vol. 18, no. 3, pp. 3476-3497, Sept. 2021 (<a href="https://ieeexplore.ieee.org/document/9313066">Link</a>).</li>
+	</ol>	
+	
+	<h3>Conference and Symposium Papers</h3>
+	<ol>
+		<li>Paper 1 </li>
+		<li>Paper 2</li>
+	</ol>	
+  
+  </div>
+
+  <div class="right">
+    <h2>News</h2>
+    <ul>
+		<li>News 1</li>
+		<li>News 2</li>
+		<li>News 3</li>
+	</ul>
+  </div>
+</div>
+
+
+<div style="background-color:#bad4f5;text-align:center;padding:10px;margin-top:7px;font-size:12px;">Page footer</div>
 
 </body>
 </html>
+
